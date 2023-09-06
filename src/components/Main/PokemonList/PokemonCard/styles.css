@@ -1,0 +1,138 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body,main{
+    width: 100%;
+    height: 100%;
+}
+
+
+.pokecard__container{
+    border: 1px solid #000;
+    display: flex;
+    align-items: center;
+    width: 320px;
+    flex-direction: column;
+    padding: 20px;
+    background-color: #1C1B1E;
+    border-radius: 15px;
+    color: #eee;
+}
+
+.pokecard__information{
+   display: flex;
+   width: 100%;
+   padding: 0 16px;
+   justify-content: space-between;
+   background-color: #1C1B1E;
+   margin: 5px 0;
+   
+}
+
+.pokecard__information h3{
+    font-weight: 300;
+    font-size: clamp(0.7rem,5vw,1rem);
+}
+
+.pokecard__information span {
+    color: #ECBC0D;
+}
+.pokecard__container img{
+    width: 180px;
+    height: 180px;
+}
+.pokecard__image-type{
+    display: flex;
+    align-items: center;
+    height: fit-content;
+    background-color: #d7d7d7;
+}
+
+.types{
+    display: flex;
+    flex-direction: column;
+    width: 100px;
+    height: 200px;    
+}
+
+.types span{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%; 
+}
+
+.type_normal{
+    background-color: #a8a878;
+}
+
+.type_fighting{
+   background-color: #c03028; 
+}
+
+.type_flying{
+    background-color: #a890f0;
+}
+
+.type_poison{
+   background-color: #a040a0; 
+}
+
+.type_ground{
+    background-color: #e0c068;
+}
+
+.type_rock{
+    background-color: #b8a038;
+}
+
+.type_bug{
+    background-color: #a8b820;
+}
+
+.type_ghost{
+    background-color: #705898;
+}
+
+.type_fire{
+    background-color: #f08030;
+}
+
+.type_water{
+    background-color: #6890f0;
+}
+
+.type_grass{
+    background-color: #78c850;
+}
+
+.type_electric{
+    background-color: #f8d030;
+}
+
+.type_psychic{
+    background-color: #f85888;
+}
+
+.type_ice{
+    background-color: #98d8d8;
+}
+
+.type_dragon{
+    background-color: #7038f8;
+}
+
+.type_dark{
+    background-color: #705848;
+}
+
+.type_fairy{
+    background-color: #ee99ac;
+}
+
+.type_steel{
+    background-color: #b8b8d0;
+}

@@ -1,0 +1,16 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body,main{
+    width: 100%;
+    height: 100%;
+    background-color:#000 ;
+}
+
+Main{
+    padding-top: 90px;
+}
+
