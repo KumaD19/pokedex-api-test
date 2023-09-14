@@ -3,6 +3,8 @@ import React from "react";
 import Main from "./Main";
 import Header from "./Header";
 
+import "./index.css";
+
 import BuildYourTeam from "./BuildYourTeam";
 import { Route, Routes, Switch } from "react-router-dom";
 
