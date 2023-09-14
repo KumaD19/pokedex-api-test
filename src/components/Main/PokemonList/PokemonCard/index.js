@@ -1,25 +1,27 @@
 import "./styles.css"
 
+import {PokemonCardStyled , PokecardInformationTitle,PokeCardImg, PokeCardTypes,PokeCardInformationStyled} from './styles.js';
+
 const PokemonCard =  ({name,id,sprites,types,alt}) =>{
     return(
-        <div className="pokecard__container">
-            <div className="pokecard__information">
-                <h3>{name.toUpperCase()}</h3>
+        <PokemonCardStyled className="pokecard__container shadow-md shadow-gray-700">
+            <PokeCardInformationStyled className="pokecard__information">
+                <PokecardInformationTitle>{name.toUpperCase()}</PokecardInformationTitle>
                 <span>#{id}</span>
-            </div>
+            </PokeCardInformationStyled>
            <div className="pokecard__image-type">
-            <img src={sprites} alt="" />
+            <PokeCardImg src={sprites} alt="" />
             <div className="types">
                 {types.map((type, index) => (
-                    <span key={index} className={`type_${type}`}>
+                    <PokeCardTypes key={index} color={type}>
                         {type}
-                    </span>
+                    </PokeCardTypes>
                 ))}
             </div>
 
            </div>
             
-        </div>
+        </PokemonCardStyled>
     )
 }
 
